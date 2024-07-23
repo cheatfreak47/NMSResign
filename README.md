@@ -1,5 +1,5 @@
 # NMS Resign
-### Forked from [NMSResign](https://www.nexusmods.com/nomanssky/mods/1565) by stk25/emoose on NexuxMods.
+### Forked from [NMSResign](https://www.nexusmods.com/nomanssky/mods/1565) by stk25/emoose on NexusMods.
 ## 
 This tool can recreate the BankSignatures.bin file for you based on your own NMSARC.pak files, which stops the game from showing any "File Tamper Warning" message.
 
