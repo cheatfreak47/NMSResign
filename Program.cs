@@ -89,7 +89,8 @@ namespace NMSResign
                 foreach (var pak in Directory.GetFiles(BanksPath, "*.pak"))
                 {
                     var info = new FileInfo(pak);
-                    bankSigs += Path.GetFileName(pak).ToUpper() + "," + info.Length.ToString() + "\r\n";
+                    var normalizedFileName = Path.GetFileName(pak).Normalize(NormalizationForm.FormC).ToUpperInvariant();
+                    bankSigs += normalizedFileName + "," + info.Length.ToString() + "\r\n";
                 }
                 var bankSigsData = Encoding.ASCII.GetBytes(bankSigs);
 
